@@ -81,3 +81,23 @@ Note: There can be many convolutional layers and pooling layers. CIFAR10CNN has 
 `dropout layer`:
 
 The dropout layer compares the data from all the neurons in the convolutional and pooling layer, and makes the final decision, which is outputted.
+
+# Directory guide
+
+
+`main.py`: The backend functions and initializer for the webserver.
+
+`static/compressed/`: The compressed images being fed into the AI.
+
+`static/uploads`: The images uploaded before they are compressed.
+
+`models/cifar10cnn.h5`: The main CIFAR10CNN model file. (binary)
+
+`templates/aipage.html`: The main homepage HTML file for the webserver.
+
+`templates/ohno.html`: An error message HTML file for incase the wrong filetype is uploaded.
+
+`templates/good.html`: The HTML code for presenting the AI's output to the user.
+
+
+Make sure to clean the static/compressed and static/uploads folders often! There is currently no function to autoclear it.
