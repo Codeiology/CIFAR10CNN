@@ -42,8 +42,8 @@ def success():
             width, height = imgproc.size
             new_size = (32,32)
             resized = imgproc.resize(new_size)
-            resized.save('compressed.jpg')
-            img = tf.keras.preprocessing.image.load_img('compressed.jpg', target_size=(32,32), color_mode = "grayscale")
+            resized.save('./static/compressed/compressed.jpg')
+            img = tf.keras.preprocessing.image.load_img('./static/compressed/compressed.jpg', target_size=(32,32), color_mode = "grayscale")
             imgarray = tf.keras.preprocessing.image.img_to_array(img)
             if imgarray.shape == (32, 32, 1):
                 reshaped = np.concatenate([imgarray] * 3, axis=-1)
