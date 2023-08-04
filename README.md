@@ -87,9 +87,9 @@ The dropout layer compares the data from all the neurons in the convolutional an
 
 `main.py`: The backend functions and initializer for the webserver.
 
-`static/compressed/`: The compressed images being fed into the AI.
+`static/compressed/`: The compressed images being fed into the AI. (I left a sample image called compressed.jpg you can test with the network!)
 
-`static/uploads`: The images uploaded before they are compressed.
+`static/uploads`: The images uploaded before they are compressed. (I left a sample image called boat.png)
 
 `models/cifar10cnn.h5`: The main CIFAR10CNN model file. (binary)
 
