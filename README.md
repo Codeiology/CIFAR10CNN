@@ -99,5 +99,7 @@ The dropout layer compares the data from all the neurons in the convolutional an
 
 `templates/good.html`: The HTML code for presenting the AI's output to the user.
 
+`requirements.txt`: The requirements file for `pip3`. You can delete it after everything runs well.
+
 
 Make sure to clean the static/compressed and static/uploads folders often! There is currently no function to autoclear it.
