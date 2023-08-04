@@ -35,6 +35,7 @@ And the web interface will render. If you are using a different computer on the 
 
 Replace (your local ip addr) with the machine that the interface is running on's private IP address. Make sure both machines are connected to the same WiFi.
 
+IMPORTANT: The webserver won't work unless you keep the terminal running.
 
 # Features
 
