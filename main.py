@@ -2,12 +2,11 @@ print("Initializing. Please wait...")
 import os
 from flask import Flask, request, render_template, send_file
 from keras.preprocessing import image
-from PIL import Image, ImageChops 
+from PIL import Image 
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import backend as K
 import numpy as np
-import matplotlib.pyplot as plt
 
 model = tf.keras.models.load_model('./models/cifar10cnn.h5')
 
@@ -23,11 +22,6 @@ def predict_image(model, x):
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
-ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
-
-def allowed_file(filename):
-    return '.' in filename and \
-           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 @app.route('/success', methods=['POST'])
 def success():
