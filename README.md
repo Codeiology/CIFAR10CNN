@@ -71,6 +71,7 @@ The input layer of neurons processes the images into numbers and arrays the rest
 
 `convolutional layer`:
 
+
 The convolutional layer has many "filters" for the data (mostly just algorithims and number functions) with parameters that are ajusted as the neural network learns.
 
 `pooling layer`:
@@ -82,6 +83,9 @@ Note: There can be many convolutional layers and pooling layers. CIFAR10CNN has 
 `dropout layer`:
 
 The dropout layer compares the data from all the neurons in the convolutional and pooling layer, and makes the final decision, which is outputted.
+The full layout of the neurons in CIFAR10CNN's brain are visualized here:
+
+![cifar10cnn](https://github.com/Codeiology/CIFAR10CNN/assets/131825227/5201e78c-282d-443d-9300-800065bede80)
 
 # Directory guide
 
