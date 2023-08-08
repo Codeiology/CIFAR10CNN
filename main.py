@@ -29,8 +29,7 @@ def success():
     if request.method == "POST":
         f = request.files['file']
         if (f.filename != ""):
-            f.save(f.filename)
-            os.replace(f.filename, "./static/uploads/" + f.filename)
+            f.save("./static/uploads/{}".format(f.filename))
             filename = "./static/uploads/" + str(f.filename)
             imgproc = Image.open(filename).convert('RGB')
             width, height = imgproc.size
@@ -80,4 +79,4 @@ def modeldownload():
         return str(e)
 
 print("READY.")
-app.run()
+app.run(host='0.0.0.0')
